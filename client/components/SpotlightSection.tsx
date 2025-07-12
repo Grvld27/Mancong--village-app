@@ -1,5 +1,5 @@
 import SpotlightCard from "../hooks/SpotlightCard";
-import staf from "../assets/foto_kasi_pemerintahan-removebg-preview.png";
+
 import CountUp from "../components/CountUp";
 import { useState, useRef, useEffect } from "react";
 import { motion, useInView } from "framer-motion";
@@ -13,6 +13,8 @@ export default function SpotlightSection() {
     useEffect(() => {
       setVisible(isInView);
     }, [isInView]);
+
+
 
 
   return (
@@ -55,18 +57,21 @@ className="grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-1 gap-0 p-0 mt-0 h-104">
 
 
 
-        <h3 className="text-white font-extrabol text-2xl mb-2">Tourism At 2023 </h3>
+        <h3 className="text-white font-extrabold text-2xl mb-2">Tourism At 2023 </h3>
 
-        <CountUp
+      <CountUp 
   from={0}
   to={331}
   separator=","
   direction="up"
   duration={8}
-    
   className="count-up-text font-bold text-8xl text-white mb-2"
+  onStart={() => {}} 
+  onEnd={() => {}}
+/>
+
   
-/> <span className="font-bold text-5xl text-white ">People</span>
+ <span className="font-bold text-5xl text-white ">People</span>
       
       </SpotlightCard>
 

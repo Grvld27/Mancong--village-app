@@ -4,7 +4,7 @@ import Aurora from '../components/Aurora';
 import HeaderCustom from "../components/Header";
 import IntroHome from "../components/IntroHome";
 import MiniMenuDrawer from '../components/DrawerCustom';
-import SpotlightSection from '../components/spotlightSection';
+import SpotlightSection from '../components/SpotlightSection';
 import SpotlightSection1 from '../components/SpotlightSection1';
 import SpotlightSection2 from '../components/SpotlightSection2';
 import ContactMe from '../components/ContactMe';
