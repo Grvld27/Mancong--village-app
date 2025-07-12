@@ -1,10 +1,13 @@
 "use client";
 import { useState, useRef, useEffect } from "react";
 import { motion, useInView } from "framer-motion";
-import type {ButtonProps, CardProps} from "@heroui/react";
-
-import React from "react";
-import {ResponsiveContainer, RadialBarChart, RadialBar, Cell, PolarAngleAxis} from "recharts";
+import {
+  ResponsiveContainer,
+  RadialBarChart,
+  RadialBar,
+  Cell,
+  PolarAngleAxis,
+} from "recharts";
 import {
   Card,
   Button,
@@ -14,8 +17,12 @@ import {
   DropdownTrigger,
   cn,
 } from "@heroui/react";
-import {Icon} from "@iconify/react";
+import { Icon } from "@iconify/react";
+import React from "react";
 
+// ======================
+// Tipe Props
+// ======================
 
 type ChartData = {
   name: string;
@@ -25,32 +32,39 @@ type ChartData = {
 
 type CircleChartProps = {
   title: string;
-  color: ButtonProps["color"];
+  color: "primary" | "secondary" | "danger";
   chartData: ChartData[];
   total: number;
 };
 
+// ======================
+// Dummy Data
+// ======================
+
 const data: CircleChartProps[] = [
   {
     title: "Population",
-    color: 'danger',
+    color: "danger",
     total: 575,
-    chartData: [{name: "Total", value: 100, fill: "red"}],
+    chartData: [{ name: "Total", value: 100, fill: "red" }],
   },
   {
     title: "Male",
     color: "primary",
     total: 300,
-    chartData: [{name: "Total", value: 100, fill: "red"}],
+    chartData: [{ name: "Total", value: 100, fill: "red" }],
   },
   {
     title: "Female",
     color: "secondary",
     total: 275,
-    chartData: [{name: "Total", value: 100, fill: "#ffffff"}],
+    chartData: [{ name: "Total", value: 100, fill: "#ffffff" }],
   },
- 
 ];
+
+// ======================
+// Komponen Utama
+// ======================
 
 export default function PieChart() {
   const ref = useRef(null);
@@ -61,15 +75,13 @@ export default function PieChart() {
     setVisible(isInView);
   }, [isInView]);
 
-
-
   return (
-    
     <motion.dl
-    initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1 }}
-    className="grid w-200  grid-cols-1 gap-x-4 gap-y-4 md:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 m-auto mt-20 ">
+      initial={{ opacity: 0, y: 30 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 1 }}
+      className="grid w-200 grid-cols-1 gap-x-4 gap-y-4 md:grid-cols-2 lg:grid-cols-3 m-auto mt-20"
+    >
       {data.map((item, index) => (
         <CircleChartCard key={index} {...item} />
       ))}
@@ -77,19 +89,28 @@ export default function PieChart() {
   );
 }
 
+// ======================
+// Komponen Card Chart
+// ======================
+
 const formatTotal = (value: number | undefined) => {
   return value?.toLocaleString() ?? "0";
 };
 
+// 🛠 Gunakan ComponentPropsWithoutRef untuk kompatibilitas Card
+type HeroUICardProps = React.ComponentPropsWithoutRef<typeof Card>;
+
 const CircleChartCard = React.forwardRef<
   HTMLDivElement,
-  Omit<CardProps, "children"> & CircleChartProps
->(({className, title, color, chartData, total, ...props}, ref) => {
+  CircleChartProps & HeroUICardProps
+>(({ className, title, color, chartData, total, ...props }, ref) => {
   return (
-    
     <Card
       ref={ref}
-      className={cn("h-[230px] border border-gray-700 dark:border-default-2 rounded-xl bg-gray-900" , className)}
+      className={cn(
+        "h-[230px] border border-gray-700 dark:border-default-2 rounded-xl bg-gray-900",
+        className
+      )}
       {...props}
     >
       <div className="flex flex-col gap-y-2 p-4 pb-0">
@@ -139,22 +160,22 @@ const CircleChartCard = React.forwardRef<
             outerRadius={70}
             startAngle={225}
           >
-            <PolarAngleAxis angleAxisId={0} domain={[0, total]} tick={false} type="number" />
+            <PolarAngleAxis
+              angleAxisId={0}
+              domain={[0, total]}
+              tick={false}
+              type="number"
+            />
             <RadialBar
               angleAxisId={0}
               animationDuration={1000}
               animationEasing="ease"
-              background={{
-                fill: "blue",
-              }}
+              background={{ fill: "blue" }}
               cornerRadius={12}
               dataKey="value"
             >
               {chartData.map((_, index) => (
-                <Cell
-                  key={`cell-${index}`}
-                  fill={"#ffffff"}
-                />
+                <Cell key={`cell-${index}`} fill="#ffffff" />
               ))}
             </RadialBar>
             <g>
@@ -162,7 +183,11 @@ const CircleChartCard = React.forwardRef<
                 <tspan className="fill-white text-tiny" dy="-0.5em" x="50%">
                   {chartData?.[0].name}
                 </tspan>
-                <tspan className="fill-white text-medium font-semibold" dy="1.5em" x="50%">
+                <tspan
+                  className="fill-white text-medium font-semibold"
+                  dy="1.5em"
+                  x="50%"
+                >
                   {formatTotal(total)}
                 </tspan>
               </text>

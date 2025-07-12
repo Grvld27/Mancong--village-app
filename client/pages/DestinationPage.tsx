@@ -2,7 +2,7 @@
 import Aurora from '../components/Aurora';
 import DestinationMap from '../components/DestinationMap';
 import HeaderCustom from '../components/Header';
-import ExampleComponent from "../components/example";
+
 
 const DestinationPage = () => {
   return (

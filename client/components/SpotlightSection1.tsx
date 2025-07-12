@@ -1,7 +1,7 @@
 import SpotlightCard from "../hooks/SpotlightCard";
 import { useState,useRef, useEffect } from "react";
 import { motion, useInView } from "framer-motion";
-import { Link } from "react-router-dom";
+
 
 export default function SpotlightSection1() {
   const ref = useRef(null);

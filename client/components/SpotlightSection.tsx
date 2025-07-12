@@ -29,7 +29,7 @@ export default function SpotlightSection() {
 
       <SpotlightCard className="h-100">
       
-        <img className="w-12 h-auto border-2 rounded-xl border-white"src='' alt=""  />
+        {/* <img className="w-12 h-auto border-2 rounded-xl border-white"src='' alt=""  /> */}
 <p>M.Kadapi</p>
         <p className="text-gray-400 ">23 Juni,2021</p>
 

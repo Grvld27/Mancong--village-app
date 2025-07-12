@@ -39,7 +39,7 @@ export default defineConfig({
         globPatterns: ['**/*.{js,css,html,ico,png,svg}'],
       },
       devOptions: {
-        enabled: true,
+        enabled: false,
       },
     }),
   ],
@@ -53,4 +53,10 @@ export default defineConfig({
       '/api': 'http://localhost:5000',
     },
   },
+build:{
+
+  outDir:'dist',
+}
+
+
 });
