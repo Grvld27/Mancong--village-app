@@ -67,7 +67,7 @@ export default function DestinationMap() {
         center={[-0.8, 116.8]}
         zoom={9}
         scrollWheelZoom={true}
-        style={{ height: '500px', width: '100%' }}
+        style={{ height: '500px', width: '80%' }}
         className="rounded-3xl mx-auto"
       >
         <TileLayer

@@ -12,10 +12,10 @@ import HeaderCustom from "../components/Header";
 import Aurora from "../components/Aurora";
 import IntroDemograp from "../components/IntroDemograp";
 import ProfileCard from "../components/ProfileCard";
-
+import MyMap from "../components/Map";
 import PieChart from "../components/PieChart";
 import KpiStat4 from "../components/KpiStat4";
-import MyMap from "../components/Map";
+
 import BarChartAge from "../components/BarChart";
 import BarChart1 from "../components/BarChart1";
 import CustomizedDotChart from "../components/CustomizedDotLineChart";
@@ -177,8 +177,14 @@ const ProfilePage = () => {
    
 
  </div>
-<MyMap/>
-<motion.h1 
+ <MyMap/>
+
+
+
+
+
+
+ <motion.h1 
 
    initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -214,7 +220,7 @@ className="text-3xl flex justify-center font-sans font-bold mt-24">livelihood of
           transition={{ duration: 1 }}
 
 className="text-3xl flex justify-center font-sans font-bold mt-24">last education</motion.h5>
-<CustomizedDotChart/>
+<CustomizedDotChart/> 
 
 
 
