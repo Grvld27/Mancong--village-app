@@ -1,0 +1,16 @@
+.scroll-reveal {
+  margin: -40pc 0pc 6pc 11pc;
+}
+
+.scroll-reveal-text {
+  font-size: 1rem;
+  line-height: 1.5;
+  font-weight: 200;
+  color: white;
+  width: 21%;
+
+}
+
+.word {
+  display: inline-block;
+}
