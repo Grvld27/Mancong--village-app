@@ -1,7 +1,4 @@
 {
-  "projects": {
-    "source": "client"
-  },
   "builds": [
     {
       "src": "client/package.json",
