@@ -5,14 +5,11 @@ const config = {
   content: [
     "./index.html",
     "./src/**/*.{js,jsx,ts,tsx}",
-        "./app/**/*.{js,ts,jsx,tsx}",
+    "./app/**/*.{js,ts,jsx,tsx}",
     "./pages/**/*.{js,ts,jsx,tsx}",
     "./components/**/*.{js,ts,jsx,tsx}",
-        "./node_modules/@heroui/react/**/*.{js,ts,jsx,tsx}", // ⬅️ WAJIB!
+    "./node_modules/@heroui/react/**/*.{js,ts,jsx,tsx}",
   ],
-  theme: {
-    extend: {
-
   theme: {
     extend: {
       keyframes: {
@@ -24,23 +21,16 @@ const config = {
       animation: {
         shine: 'shine 5s linear infinite',
       },
-    },
-  },
-
-   colors: {
+      colors: {
         foreground: "hsl(var(--foreground))",
-     },
-       transitionTimingFunction: {
+      },
+      transitionTimingFunction: {
         slow: "cubic-bezier(.405, 0, .025, 1)",
         "minor-spring": "cubic-bezier(0.18,0.89,0.82,1.04)",
-     }
-
-
+      },
     },
   },
-
-
-  plugins: [heroui(), ],
+  plugins: [heroui()],
 };
 
 export default config;
