@@ -180,7 +180,7 @@ The ceremony involves various traditional rites such as bone purification, offer
 
 <div className="grid grid-cols-2">
 <iframe  className="rounded-2xl mt-10 transform hover:scale-105 transition duration-500"src="https://youtube.com/embed/YPZx7cpnkKc?si=Ji4MWHF3N_px0Y5k" frameborder="0"
-
+allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
 width={600}
 height={400}
 
@@ -203,6 +203,7 @@ Led by a Beli’an (ritual leader or shaman), Berinukg includes chants, offering
 <iframe className="rounded-2xl mt-10" src="https://youtube.com/embed/4kcyoSboryk?si=-YOg3v0Bb-q3Yyw-" 
 width={600}
 height={400}
+allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
 frameborder="0"></iframe>
 </div>
 

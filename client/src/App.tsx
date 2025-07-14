@@ -21,7 +21,7 @@ function App() {
   }, []);
   
   return (
-<>
+<div  className='w-screen h-screen p-8 flex'>
 
 
 <Routes>
@@ -41,7 +41,7 @@ function App() {
 
 <Route path='*' element={<NotFoundPage/>} />
 </Routes>
-</>
+</div>
 
   );
 };
