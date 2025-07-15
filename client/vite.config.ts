@@ -7,9 +7,10 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
 
 export default defineConfig({
+  root: __dirname, // 
   
   plugins: [react()],
-  base: './',
+  
   resolve: {
     alias: {
       '@': resolve(__dirname, './src'),
@@ -20,12 +21,11 @@ export default defineConfig({
       '/api': 'http://localhost:5000',
     },
   },
- build: {
-  outDir: 'dist',
-  minify: true,
-  // optional tambahan
-  rollupOptions: {
-    treeshake: false,
-  },
-}
+  build: {
+    outDir: 'dist',
+    minify: true,
+    rollupOptions: {
+      treeshake: false,
+    },
+  }
 });
