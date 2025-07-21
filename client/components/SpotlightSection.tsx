@@ -24,7 +24,7 @@ export default function SpotlightSection() {
           transition={{ duration: 1}}
     
     
-    className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 p-6 mt-10 mb-[-20pc] h-200">
+    className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 p-6 mt-12 mb-[-20pc] h-200">
       <a href="https://www.infokubar.id/lamin-mancong-rumah-panjang-legendaris-di-kutai-barat/">
 
       <SpotlightCard className="h-100">

@@ -11,7 +11,7 @@ import patung from '../assets/patung1.jpeg';
 import sungai from '../assets/sungai.jpg';
 import ulapDoyo from '../assets/ulap doyo.jpg';
 import buntarDoyo from '../assets/buntardoyo.jpg';
-import kwangkai from '../assets/18.-Kwangkai-Adat-Kematian-Suku-Dayak-1.jpg'
+import kwangkai from '../assets/Kwangkai baru.jpg'
 import tariGantar from '../assets/tarigantar.jpeg';
 import belian from'../assets/belian.jpg';
 

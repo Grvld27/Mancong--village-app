@@ -8,7 +8,7 @@ const config = {
     "./app/**/*.{js,ts,jsx,tsx}",
     "./pages/**/*.{js,ts,jsx,tsx}",
     "./components/**/*.{js,ts,jsx,tsx}",
-    "./style/**/*.{css}", // ✅ Tambahkan ini
+    "./style/**/*.{css}",
     "./node_modules/@heroui/react/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
@@ -34,4 +34,5 @@ const config = {
   plugins: [heroui()],
 };
 
-module.export= config;
+// ✅ Perbaikan di sini
+module.exports = config;
