@@ -1,11 +1,11 @@
 import { useState,useRef, useEffect } from "react";
-import reactlogo from '../assets/React.png'
-import vitelogo from '../assets/Vite.png'
+import reactlogo from '../dist/assets/React.png'
+import vitelogo from '../dist/assets/Vite.png'
 
-import tailwindlogo from '../assets/Tailwind_CSS_Logo.svg.png'
-import expresslogo from '../assets/ExpressJs.png'
-import mongodblogo from '../assets/mongoDB.png'
-import Profile from "../assets/foto di sempaja.jpg";
+import tailwindlogo from '../dist/assets/Tailwind_CSS_Logo.svg.png'
+import expresslogo from '../dist/assets/ExpressJs.png'
+import mongodblogo from '../dist/assets/mongoDB.png'
+import Profile from "../dist/assets/foto di sempaja.jpg";
 import SpotlightCard from "../hooks/SpotlightCard";
 // React
 import { motion, useInView } from "framer-motion";

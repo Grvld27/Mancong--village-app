@@ -1,13 +1,13 @@
 import { useState, useRef, useEffect } from "react";
 import { motion, useInView } from "framer-motion";
-import petinggi from '../assets/Foto_Petinggi-removebg-preview.png';
-import sekdes from '../assets/foto_sekdes-removebg-preview.png'
-import kaurumum from '../assets/foto_kaur_umum-removebg-preview.png'
-import kaurUang from '../assets/foto_kaur_keuangan_-removebg-preview .png'
-import kasiPelayanan from '../assets/foto_kasi_kesejahteraan-removebg-preview.png'
-import kasiPemerintahan from '../assets/foto_kasi_pemerintahan-removebg-preview.png'
-import staf1 from'../assets/Staf1-removebg-preview.png'
-import staf from'../assets/staf-removebg-preview.png'
+import petinggi from '../dist/assets/Foto_Petinggi-removebg-preview.png';
+import sekdes from '../dist/assets/foto_sekdes-removebg-preview.png'
+import kaurumum from '../dist/assets/foto_kaur_umum-removebg-preview.png'
+import kaurUang from '../dist/assets/foto_kaur_keuangan_-removebg-preview .png'
+import kasiPelayanan from '../dist/assets/foto_kasi_kesejahteraan-removebg-preview.png'
+import kasiPemerintahan from '../dist/assets/foto_kasi_pemerintahan-removebg-preview.png'
+import staf1 from'../dist/assets/Staf1-removebg-preview.png'
+import staf from'../dist/assets/staf-removebg-preview.png'
 import HeaderCustom from "../components/Header";
 import Aurora from "../components/Aurora";
 import IntroDemograp from "../components/IntroDemograp";
