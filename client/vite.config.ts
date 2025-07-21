@@ -7,10 +7,11 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
 
 export default defineConfig({
-  root: __dirname, // 
-  
+  root: __dirname, // ini oke
+
   plugins: [react()],
-  
+  base: './', // ⬅️ Tambahkan baris ini
+
   resolve: {
     alias: {
       '@': resolve(__dirname, './src'),
@@ -29,3 +30,4 @@ export default defineConfig({
     },
   }
 });
+
