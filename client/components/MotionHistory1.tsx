@@ -3,13 +3,13 @@ import { motion, useInView } from "framer-motion";
 import SpotlightCard from "../hooks/SpotlightCard";
 
 // Assets
-import Lamin from '../assets/Lamin.jpeg';
-import sultan from '../assets/sultan aji muhammad alimuddin.jpg';
-import keraton from '../assets/The-Keraton-Kesultanan-of-Kutai-in-the-times-of-Sultan-Aji-Muhammad-Alimuddin-r.png';
-import kumala from '../assets/laminpulaukumala.jpg';
-import LaminSeberang from '../assets/Lamin-Mancong-seberang-1024x683.jpg';
-import TerasDepan from '../assets/Teras-depan-Lamin-Mancong.jpg';
-import TiangLamin from '../assets/Tiang-panggung-Lamin-Mancong.jpg';
+import Lamin from '../assets/Lamin-cRPuzSrk.jpeg';
+import sultan from '../assets/sultan aji muhammad alimuddin-Dc2QaXPI.jpg';
+import keraton from '../assets/The-Keraton-Kesultanan-of-Kutai-in-the-times-of-Sultan-Aji-Muhammad-Alimuddin-r-UDDcZH3e.png';
+import kumala from '../assets/laminpulaukumala-DHMagnsh.jpg';
+import LaminSeberang from '../assets/Lamin-Mancong-seberang-1024x683-dk9BCdn5.jpg';
+import TerasDepan from '../assets/Teras-depan-Lamin-Mancong-C1uUaQ_f.jpg';
+import TiangLamin from '../assets/Tiang-panggung-Lamin-Mancong-CZZwcf8X.jpg';
 
 export default function AnimatedText() {
   const ref = useRef(null);

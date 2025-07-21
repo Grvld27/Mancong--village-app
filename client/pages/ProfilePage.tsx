@@ -1,13 +1,13 @@
 import { useState, useRef, useEffect } from "react";
 import { motion, useInView } from "framer-motion";
 import Fotopetinggi from '../assets/Foto_Petinggi-removebg-preview-dHaV_VfB.png';
-import sekdes from '../assets/foto_sekdes-removebg-preview.png'
-import kaurumum from '../assets/foto_kaur_umum-removebg-preview.png'
-import kaurUang from '../assets/foto_kaur_keuangan_-removebg-preview .png'
-import kasiPelayanan from '../assets/foto_kasi_kesejahteraan-removebg-preview.png'
-import kasiPemerintahan from '../assets/foto_kasi_pemerintahan-removebg-preview.png'
-import staf1 from'../assets/Staf1-removebg-preview.png'
-import staf from'../assets/staf-removebg-preview.png'
+import sekdes from '../assets/foto_sekdes-removebg-preview-Bmn2FfQJ.png'
+import kaurumum from '../assets/foto_kaur_keuangan_-removebg-preview -D1WU4lzD.png'
+import kaurUang from '../assets/foto_kaur_keuangan_-removebg-preview -D1WU4lzD.png'
+import kasiPelayanan from '../assets/foto_kasi_kesejahteraan-removebg-preview-B5AZD2sG.png'
+import kasiPemerintahan from '../assets/foto_kasi_pemerintahan-removebg-preview-BYz9udlT.png'
+import staf1 from'../assets/Staf1-removebg-preview-B06X-HbE.png'
+import staf from'../assets/staf-removebg-preview-De3Ve7_Z.png'
 import HeaderCustom from "../components/Header";
 import Aurora from "../components/Aurora";
 import IntroDemograp from "../components/IntroDemograp";

@@ -1,6 +1,6 @@
-import sungaiImg from "../assets/sungai.jpg";
-import monkeyImg from "../assets/monkey.jpeg";
-import humanImg from "../assets/human1.jpeg";
+import sungaiImg from "../assets/sungai-DupnVGYu.jpg";
+import monkeyImg from "../assets/monkey-C0jNnkSP.jpeg";
+import humanImg from "../assets/human1-cbKT14Ki.jpeg";
 import { ArrowRight } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 import { useState, useRef, useEffect } from "react";
