@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from "react";
-import logo from "../dist/assets/logo_aplikasi-removebg-preview.png";
+import logo from "../assets/logo_aplikasi-removebg-preview.png";
 import { motion } from "framer-motion";
 function HeaderCustom() {
 

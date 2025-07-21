@@ -8,7 +8,7 @@ import markerShadow from 'leaflet/dist/images/marker-shadow.png';
 import { useEffect, useRef, useState } from 'react';
 import { motion, useInView } from 'framer-motion';
 import SpotlightCard from '../hooks/SpotlightCard';
-import Sepinggan from'../dist/assets/f6d00_bandar-udara-bandara-internasional-sultan-aji-muhammad-sulaiman-sepinggan-sams.jpg';
+import Sepinggan from'../assets/f6d00_bandar-udara-bandara-internasional-sultan-aji-muhammad-sulaiman-sepinggan-sams.jpg';
 L.Marker.prototype.options.icon = L.icon({
   iconUrl: markerIcon,
   shadowUrl: markerShadow,

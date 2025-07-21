@@ -34,5 +34,5 @@ const config = {
   plugins: [heroui()],
 };
 
-// ✅ Perbaikan di sini
+
 module.exports = config;

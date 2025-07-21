@@ -3,7 +3,7 @@ import { useState, useRef, useEffect } from "react";
 
 import { style } from "framer-motion/client";
 import SpotlightCard from "../hooks/SpotlightCard";
-import KantorDesa from "../dist/assets/Demograp.jpeg"
+import KantorDesa from "../assets/Demograp.jpeg"
 import { motion, useInView } from "framer-motion";
 function IntroDemograp () {
 

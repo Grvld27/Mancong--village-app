@@ -1,19 +1,19 @@
 
 import Masonry from "../components/Masonry";
-import lamin from '../dist/assets/Bangunan-Lamin-Mancong.jpg'
-import human2 from '../dist/assets/human2.jpeg';
-import nari from '../dist/assets/nari.jpg';
-import sumpit from '../dist/assets/sumpit.jpeg';
-import gadis1 from '../dist/assets/Gadis-Dayak-Cantik-di-Lamin-Mancong.jpg';
-import gadis2 from '../dist/assets/gadis2.jpeg';
-import human3 from '../dist/assets/human3.jpeg';
-import patung from '../dist/assets/patung1.jpeg';
-import sungai from '../dist/assets/sungai.jpg';
-import ulapDoyo from '../dist/assets/ulap doyo.jpg';
-import buntarDoyo from '../dist/assets/buntardoyo.jpg';
-import kwangkai from '../dist/assets/Kwangkai baru.jpg'
-import tariGantar from '../dist/assets/tarigantar.jpeg';
-import belian from'../dist/assets/belian.jpg';
+import lamin from '../assets/Bangunan-Lamin-Mancong.jpg'
+import human2 from '../assets/human2.jpeg';
+import nari from '../assets/nari.jpg';
+import sumpit from '../assets/sumpit.jpeg';
+import gadis1 from '../assets/Gadis-Dayak-Cantik-di-Lamin-Mancong.jpg';
+import gadis2 from '../assets/gadis2.jpeg';
+import human3 from '../assets/human3.jpeg';
+import patung from '../assets/patung1.jpeg';
+import sungai from '../assets/sungai.jpg';
+import ulapDoyo from '../assets/ulap doyo.jpg';
+import buntarDoyo from '../assets/buntardoyo.jpg';
+import kwangkai from '../assets/Kwangkai baru.jpg'
+import tariGantar from '../assets/tarigantar.jpeg';
+import belian from'../assets/belian.jpg';
 
 
 import HeaderCustom from "../components/Header";
