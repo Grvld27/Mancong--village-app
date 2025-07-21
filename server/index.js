@@ -2,6 +2,7 @@ import express from 'express';
 import cors from 'cors';
 import mongoose from 'mongoose';
 import dotenv from 'dotenv';
+import serverless from 'serverless-http';
 
 dotenv.config();
 
@@ -9,12 +10,12 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-// MongoDB connection (update: no deprecated options)
+// Koneksi MongoDB
 mongoose.connect(process.env.MONGO_URI)
   .then(() => console.log("MongoDB connected"))
   .catch(err => console.error(err));
 
-// Message model
+// Schema dan Model
 const messageSchema = new mongoose.Schema({
   name: String,
   email: String,
@@ -22,7 +23,7 @@ const messageSchema = new mongoose.Schema({
 });
 const Message = mongoose.model('Message', messageSchema);
 
-// API endpoint
+// Route handler
 app.post('/api/messages', async (req, res) => {
   try {
     const newMessage = new Message(req.body);
@@ -33,6 +34,5 @@ app.post('/api/messages', async (req, res) => {
   }
 });
 
-app.listen(5000, () => {
-  console.log("Server running on http://localhost:5000");
-});
+// Export sebagai handler serverless
+export const handler = serverless(app);

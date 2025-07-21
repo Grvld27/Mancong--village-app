@@ -10,7 +10,7 @@ export default defineConfig({
   root: __dirname, // ini oke
 
   plugins: [react()],
-  base: './', // ⬅️ Tambahkan baris ini
+  base: '', // ⬅️ Tambahkan baris ini
 
   resolve: {
     alias: {
