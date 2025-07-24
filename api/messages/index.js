@@ -10,12 +10,10 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-// Koneksi ke MongoDB
-mongoose.connect(process.env.MONGO_URI,)
-.then(() => console.log("MongoDB connected"))
-.catch(err => console.error("MongoDB connection error:", err));
+mongoose.connect(process.env.MONGO_URI)
+  .then(() => console.log("MongoDB connected"))
+  .catch(err => console.error("MongoDB connection error:", err));
 
-// Schema dan model
 const messageSchema = new mongoose.Schema({
   name: String,
   email: String,
@@ -24,8 +22,8 @@ const messageSchema = new mongoose.Schema({
 
 const Message = mongoose.model('Message', messageSchema);
 
-// Endpoint POST untuk menerima saran
-app.post('/api/messages', async (req, res) => {
+// Hapus `/api` dari sini karena Vercel sudah handle prefix-nya
+app.post('/', async (req, res) => {
   try {
     const newMessage = new Message(req.body);
     await newMessage.save();
@@ -36,5 +34,4 @@ app.post('/api/messages', async (req, res) => {
   }
 });
 
-// Export handler untuk Vercel
 module.exports = serverless(app);

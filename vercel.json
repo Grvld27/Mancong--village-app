@@ -9,38 +9,17 @@
       }
     },
     {
-      "src": "api/index.js",
+      "src": "api/**/*.js",
       "use": "@vercel/node"
     }
   ],
   "routes": [
     {
       "src": "/api/(.*)",
-      "dest": "/api/index.js"
+      "dest": "/api/$1"
     },
     {
-      "src": "/(.*\\.js)",
-      "dest": "/client/dist/$1"
-    },
-    {
-      "src": "/(.*\\.css)",
-      "dest": "/client/dist/$1"
-    },
-    {
-      "src": "/(.*\\.png)",
-      "dest": "/client/dist/$1"
-    },
-    {
-      "src": "/(.*\\.jpg)",
-      "dest": "/client/dist/$1"
-    },
-    {
-      "src": "/(.*\\.svg)",
-      "dest": "/client/dist/$1"
-    },
-    {
-      "src": "/(.*\\.ico)",
-      "dest": "/client/dist/$1"
+      "handle": "filesystem"
     },
     {
       "src": "/(.*)",
