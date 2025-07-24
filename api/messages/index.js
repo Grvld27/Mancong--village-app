@@ -10,9 +10,14 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-mongoose.connect(process.env.MONGO_URI)
-  .then(() => console.log("MongoDB connected"))
-  .catch(err => console.error("MongoDB connection error:", err));
+// Cegah koneksi ulang ke MongoDB
+let isConnected = false;
+const connectDB = async () => {
+  if (isConnected) return;
+  await mongoose.connect(process.env.MONGO_URI);
+  isConnected = true;
+  console.log("MongoDB connected");
+};
 
 const messageSchema = new mongoose.Schema({
   name: String,
@@ -20,11 +25,12 @@ const messageSchema = new mongoose.Schema({
   message: String
 });
 
-const Message = mongoose.model('Message', messageSchema);
+const Message = mongoose.models.Message || mongoose.model('Message', messageSchema);
 
-// Hapus `/api` dari sini karena Vercel sudah handle prefix-nya
+// Vercel sudah handle /api/messages, jadi pakai '/'
 app.post('/', async (req, res) => {
   try {
+    await connectDB();
     const newMessage = new Message(req.body);
     await newMessage.save();
     res.status(201).json({ message: "Message saved!" });
