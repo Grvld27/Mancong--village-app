@@ -15,14 +15,14 @@
   ],
   "routes": [
     {
-      "src": "/api/(.*)",
+      "src": "^/api/(.*)$",
       "dest": "/api/$1"
     },
     {
       "handle": "filesystem"
     },
     {
-      "src": "/(.*)",
+      "src": "^(?!/api)(.*)$",
       "dest": "/client/dist/index.html"
     }
   ]
