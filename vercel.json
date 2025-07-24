@@ -14,40 +14,37 @@
     }
   ],
   "routes": [
-
     {
       "src": "/api/(.*)",
-      "dest": "api/index.js"
+      "dest": "/api/index.js"
     },
-
     {
       "src": "/(.*\\.js)",
-      "dest": "/dist/$1"
+      "dest": "/client/dist/$1"
     },
     {
       "src": "/(.*\\.css)",
-      "dest": "/dist/$1"
+      "dest": "/client/dist/$1"
     },
     {
       "src": "/(.*\\.png)",
-      "dest": "/dist/$1"
+      "dest": "/client/dist/$1"
     },
     {
       "src": "/(.*\\.jpg)",
-      "dest": "/dist/$1"
+      "dest": "/client/dist/$1"
     },
     {
       "src": "/(.*\\.svg)",
-      "dest": "/dist/$1"
+      "dest": "/client/dist/$1"
     },
     {
       "src": "/(.*\\.ico)",
-      "dest": "/dist/$1"
+      "dest": "/client/dist/$1"
     },
-   
     {
       "src": "/(.*)",
-      "dest": "/dist/index.html"
+      "dest": "/client/dist/index.html"
     }
   ]
 }
