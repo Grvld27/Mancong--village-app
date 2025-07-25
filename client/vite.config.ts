@@ -1,16 +1,20 @@
 import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
-import { resolve } from 'path';
+import { fileURLToPath } from 'url';
+import { dirname, resolve } from 'path';
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = dirname(__filename);
 
 export default defineConfig({
-  root: resolve(__dirname, 'client'), // ✅ Arahkan ke folder client
+  root: __dirname, // ini oke
 
   plugins: [react()],
-  base: './', // ✅ Bisa juga '/' jika routing 404 di Vercel
+  base: '/', // ⬅️ Tambahkan baris ini
 
   resolve: {
     alias: {
-      '@': resolve(__dirname, 'client/src'),
+      '@': resolve(__dirname, './src'),
     },
   },
   server: {
@@ -19,10 +23,11 @@ export default defineConfig({
     },
   },
   build: {
-    outDir: 'dist', // dist di dalam client/
+    outDir: 'dist',
     minify: true,
     rollupOptions: {
       treeshake: false,
     },
   }
 });
+
