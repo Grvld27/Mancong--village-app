@@ -80,7 +80,7 @@ export default function PieChart() {
       initial={{ opacity: 0, y: 30 }}
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 1 }}
-      className="grid w-200 grid-cols-1 gap-x-4 gap-y-4 md:grid-cols-2 lg:grid-cols-3 m-auto mt-20"
+      className="grid xl:w-200 w-auto grid-cols-1 xl:grid-cols-1 gap-x-4 gap-y-4 md:grid-cols-2 lg:grid-cols-3 m-auto mt-20"
     >
       {data.map((item, index) => (
         <CircleChartCard key={index} {...item} />

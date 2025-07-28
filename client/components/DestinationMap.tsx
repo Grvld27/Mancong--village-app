@@ -51,7 +51,7 @@ export default function DestinationMap() {
 
 
   return (
-    <motion.div className='overflow-x-hidden'
+    <motion.div className='overflow-x-hidden '
     initial={{ opacity: 0, x: 30 }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 1}}
@@ -67,8 +67,8 @@ export default function DestinationMap() {
         center={[-0.8, 116.8]}
         zoom={9}
         scrollWheelZoom={true}
-        style={{ height: '500px', width: '80%' }}
-        className="rounded-3xl mx-auto"
+        style={{ height: '400px', width: '100%' }}
+        className="rounded-3xl mx-auto z-2"
       >
         <TileLayer
           url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
@@ -94,12 +94,12 @@ export default function DestinationMap() {
         <RoutingControl />
       </MapContainer>
 
-<SpotlightCard className="mt-10 mx-auto w-fit h-120">
+<SpotlightCard className="mt-10 mx-auto w-fit h-auto">
 
-<div className='grid grid-cols-2 gap-0 p-0 mt-0 h-auto gap-x-0'>
+<div className='grid grid-cols-1   lg:grid-cols-2 gap-0 p-0 mt-0 h-auto gap-x-0'>
   
-<img className=" w-100  rounded-2xl  "src={Sepinggan} alt="" />
-<SpotlightCard className='h-94 w-100 ml-10'>
+<img className=" w-100  rounded-2xl mx-auto  "src={Sepinggan} alt="" />
+<SpotlightCard className='h-auto w-auto mx-auto  mt-5'>
 <h1 className='font-sans text-2xl font-bold' >Balikpapan, East Kalimantan</h1>
 <p className='text-sm mt-16 mx-auto w-fit justify-items-center mb-10 text-gray-400 '>The journey to Kampung Wisata Mancong begins in Balikpapan, a major port city in East Kalimantan. From Balikpapan, you’ll travel approximately 115 km by land to Samarinda, the capital of East Kalimantan Province. This leg of the journey usually takes around 3 to 4 hours by car or bus.
 
@@ -123,7 +123,7 @@ From Samarinda, continue your journey westward to Kampung Mancong, located in Je
 
 
 
-<SpotlightCard className="h-240 mx-auto w-fit mt-20 mb-0 ">
+<SpotlightCard className=" mx-auto w-fit h-auto mt-20 mb-0 ">
 <div className="grid grid-cols-2 gap-0 p-0 mt-0 h-auto  gap-x-0">  
 
         <h1 className="font-sans text-2xl font-bold w-50 mb-10">There are water and land routes</h1>
@@ -132,12 +132,12 @@ From Samarinda, continue your journey westward to Kampung Mancong, located in Je
 <p className='text-sm  mx-auto w-fit text-gray-400' > The travel time from Samarinda to Mancong is about 8 to 10 hours, depending on road and weather conditions.
 Alternatively, you can take a combination of land and river routes, especially from Kota Bangun to Kampung Mancong, using river transport along the Mahakam River and through Lake Jempang — offering a scenic and culturally rich travel experience.</p>
 
-<div className="grid grid-cols-3 sm:grid-cols-3 lg:grid-cols-3 gap-8 p-0 mt-0 h-104 ">
+<div className="grid grid-cols-1 md:grid-cols-2 sm:grid-cols-3 lg:grid-cols-2 gap-8 p-0 mt-0 h-104 ">
   
-   <SpotlightCard className="mt-10 h-150">
-<iframe className=" w-full max-w-full rounded-xl"
-  width="90%"
-  height="550"
+   <SpotlightCard className="mt-10   md:w-auto  ">
+<iframe className=" w-full  max-w-full rounded-xl"
+  width="100%"
+  height="100%"
   src="https://www.youtube.com/embed/0AgRmb5-x24?si=WBXK_lMdU2J5GKC_"
   title="YouTube video player"
   frameBorder="2"
@@ -148,10 +148,10 @@ Alternatively, you can take a combination of land and river routes, especially f
    
 
 
-   <SpotlightCard className="mt-10 w-200">
-<iframe className="rounded-xl"
+   <SpotlightCard className="mt-10 w-auto  ">
+<iframe className=" w-full max-w-full  rounded-xl"
   width="100%"
-  height="550"
+  height="100%"
   src="https://youtube.com/embed/kZD59w9q0es?si=hHLHQjT93oDdZsQA"
   title="YouTube video player"
   frameBorder="2"

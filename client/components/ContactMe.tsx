@@ -16,18 +16,19 @@ export default function ContactMe() {
   }, [isInView]);
   
   return (
+    
     <motion.div 
         initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 1 }}
     
-    className="grid  lg:grid-cols-1 gap-0   mt-[10%]  h-200 mx-auto w-fit">
+    className="grid  lg:grid-cols-1 gap-0 overflow-hidden lg:mx-auto lg:w-150">
 
- <h1 className='text-5xl font-sans font-bold mx-auto w-fit mb-30'>Contact Me</h1>
-      <SpotlightCard className="h-150 w-120">
+ <h1 className='text-5xl  lg:text-2xl  font-sans font-bold mx-auto mb-10 '>Contact Me</h1>
+      <SpotlightCard className="lg:h-auto lg:w-full lg:mx-auto mb-70 ">
       
 
-<SpotlightCard>
+<SpotlightCard className="lg:w-full lg:h-auto">
     <InputForm/>
 </SpotlightCard>
       </SpotlightCard>

@@ -74,9 +74,9 @@ export default class CustomizedDotChart extends PureComponent {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 1 }}
     
-    className='justify-items-center'> 
-    <div style={{ width: '50%', height: 300 }}>
-      <ResponsiveContainer width="100%" height="100%">
+    className='justify-items-center w-auto'> 
+    <div style={{ width: '100%', height: 300 }}>
+      <ResponsiveContainer >
         <LineChart
           data={data}
           margin={{

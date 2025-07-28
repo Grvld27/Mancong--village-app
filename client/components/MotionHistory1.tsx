@@ -35,7 +35,7 @@ export default function AnimatedText() {
 
   return (
     <div className="mx-auto w-fit mb-10 ">
-    <SpotlightCard className=" mb-10 px-6 py-10 overflow-x-hidden">
+    <SpotlightCard className=" mt-10 mb-10 px-6 py-10 overflow-x-hidden">
       {/* Section 1: Intro */}
       <div className="grid md:grid-cols-2 gap-10 mb-16 items-center">
         <motion.div

@@ -3,7 +3,7 @@ import { useState, useRef, useEffect } from 'react';
 import { motion, useInView } from 'framer-motion';
 
 
-import { BarChart, Bar, Cell, XAxis, YAxis, CartesianGrid } from 'recharts';
+import { BarChart, Bar, Cell, XAxis, YAxis, CartesianGrid, ResponsiveContainer } from 'recharts';
 
 const colors = ['#0088FE', '#00C49F', '#FFBB28', '#FF8042', 'red', 'pink'];
 
@@ -71,10 +71,10 @@ export default function BarChart1() {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 1 }}
 
-className='justify-items-center mt-20'>
+className='justify-items-center mt-20 w-auto mx-auto'>
+  <ResponsiveContainer width="100%" height={400}>
     <BarChart 
-      width={700}
-      height={300}
+     
       data={data}
       margin={{
         top: 20,
@@ -92,6 +92,7 @@ className='justify-items-center mt-20'>
         ))}
       </Bar>
     </BarChart>
+    </ResponsiveContainer>
     </motion.div>
   );
 }

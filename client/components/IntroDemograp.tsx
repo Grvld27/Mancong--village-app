@@ -36,13 +36,13 @@ function IntroDemograp () {
 
 
 
-className="grid grid-cols-2 gap-2">
+className=" grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-2 gap-2">
    <motion.p
      initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 1 }}
    
-   className= "mt-20   text-m font-sans text-gray-400 w-2xl">
+   className= "mt-20 mb-10     text-auto font-sans text-white w-auto  xl:w-2xl">
  Discover how population data reveals the dynamics of our society — from age and gender to education, employment, and more. 
  These insights help shape informed decisions and smarter development.
    </motion.p>
@@ -54,7 +54,7 @@ className="grid grid-cols-2 gap-2">
           transition={{ duration: 1 }}
 
  
-className=" h-auto w-150 rounded-2xl  "src={KantorDesa} alt="" 
+className=" h-auto w-auto md:w-lg md:mx-auto rounded-2xl  "src={KantorDesa} alt="" 
 />
 
 </div>

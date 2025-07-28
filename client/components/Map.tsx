@@ -33,8 +33,11 @@ L.Marker.prototype.options.icon = L.icon({
 export default function MyMap() {
   return (
     <>
+
+
+    
       <h1
-        className='flex justify-center mt-50 mb-20 font-bold text-3xl font-sans'
+        className='     mx-auto xl:text-3xl text-2xl flex justify-center font-sans font-bold mb-20 mt-20'
         style={{ textShadow: '6px 10px 20px #999999' }}
         initial={{ opacity: 0, x: 30 }}
         whileInView={{ opacity: 1, x: 0 }}
@@ -43,13 +46,13 @@ export default function MyMap() {
         Geographics
       </h1>
 
-<div className='grid grid-cols-2 '>
-      <div className="flex justify-start w-400 ">
+<div className=' grid grid-cols-1 xl:grid-cols-2 gap-0  '>
+      <div className="flex  h-90 z-2">
         <MapContainer
           center={[-0.53437, 116.07845]}
           zoom={12}
           scrollWheelZoom={true}
-          style={{ height: '100%', width: '40%' }}
+          style={{ height: '100%', width: '100%' }}
           className="rounded-4xl"
         >
           <TileLayer
@@ -68,7 +71,7 @@ export default function MyMap() {
           transition={{ duration: 1 }}
         
         
-        className="max-w-3xl mx-auto mt-5 p-4 border rounded-xl shadow-lg bg-white">
+        className="w-fit md:mx-auto xl:mx-auto mt-5 p-4 border rounded-xl shadow-lg bg-white">
           <h2 className="text-2xl font-bold mb-4 text-center text-gray-700">
             Geo Information
           </h2>

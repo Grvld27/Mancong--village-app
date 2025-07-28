@@ -4,12 +4,12 @@ import Aurora from '../components/Aurora';
 import HeaderCustom from "../components/Header";
 import IntroHome from "../components/IntroHome";
 import MiniMenuDrawer from '../components/DrawerCustom';
-import SpotlightSection from '../components/SpotlightSection';
-import SpotlightSection1 from '../components/SpotlightSection1';
-import SpotlightSection2 from '../components/SpotlightSection2';
+
+
+
 import ContactMe from '../components/ContactMe';
 
-import { Container } from 'lucide-react';
+
 
 
 
@@ -18,7 +18,7 @@ const HomePage = () => {
 
 return (
     <div>
-   <Aurora
+   <Aurora 
   colorStops={["#3A29FF", "#FF94B4", "#FF3232"]}
   blend={0.5}
   amplitude={1.0}
@@ -35,13 +35,11 @@ return (
 
 
 
-<SpotlightSection/>
 
 
 
 
-<SpotlightSection1/>
-<SpotlightSection2/>
+
 
 <ContactMe/>
 

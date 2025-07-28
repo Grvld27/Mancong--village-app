@@ -123,7 +123,7 @@ const items = [
 <h1 className="text-2xl flex justify-center font-sans font-bold mb-1 mt-40">Gallery</h1>
 
 
-   <p  className= "mt-20 ml-5 font-medium text-m  text-gray-400 font-sans w-m"
+   <p  className= "mt-20 ml-5 font-medium text-m  text-gray-300 font-sans w-m"
    
 
 
@@ -148,17 +148,17 @@ These photographs are more than just visuals; they represent living heritage, st
 
 
 
-<div className="mt-160 h-100">
-<SpotlightCard className="h-700">
+<div className=" mt-570 md:mt-340  xl:mt-160 h-100 lg:mt-170">
+<SpotlightCard className="h-auto md:h-auto ">
 <h1  className="text-2xl flex justify-center font-sans font-bold mb-1 mt-0" > Ulap Doyo</h1>
-<div className="grid grid-cols-2 mt-10">
-<img  className="w-90  mx-auto h-auto rounded-2xl transform hover:scale-110 transition duration-500" src={ulapDoyo} alt="" />
+<div className="grid grid-cols-1 md:grid-cols-2 mt-10">
+<img  className="w-auto md:w-50 x: lg:w-80 mx-auto h-auto rounded-2xl transform hover:scale-110 transition duration-500" src={ulapDoyo} alt="" />
 <div className="grid grid-cols-1">
-<p className="text-sm text-gray-400  w-120 mr-50  "> Ulap Doyo is a traditional woven fabric made by the Dayak Benuaq people, particularly in West Kutai Regency, East Kalimantan, Indonesia. The name "Ulap Doyo" comes from the doyo plant (Curculigo latifolia), a wild plant whose fibers are spun into thread and woven manually using traditional looms.
+<p className="text-sm xl:text-m md:text-sm xl:w-2xl md:w-80 text-gray-300  w-full mt-10 mb-10  "> Ulap Doyo is a traditional woven fabric made by the Dayak Benuaq people, particularly in West Kutai Regency, East Kalimantan, Indonesia. The name "Ulap Doyo" comes from the doyo plant (Curculigo latifolia), a wild plant whose fibers are spun into thread and woven manually using traditional looms.
 
 The motifs of Ulap Doyo are deeply symbolic and inspired by nature, such as hornbills, dragons, plants, and other sacred patterns passed down through generations. The cloth is used in traditional ceremonies and is an essential part of Dayak cultural attire.</p>
 
-<img className="w-100 h-auto rounded-2xl transform hover:scale-110 transition duration-500" src={buntarDoyo} alt="" />
+<img className="w-100 xl:w-2xl xl:mt-10  lg:w-auto h-auto rounded-2xl transform hover:scale-106 transition duration-500" src={buntarDoyo} alt="" />
 </div>
 
 
@@ -173,34 +173,39 @@ The motifs of Ulap Doyo are deeply symbolic and inspired by nature, such as horn
 <h2  className="text-2xl flex justify-center font-sans font-bold mb-1 mt-10 ">Kwangkai Ceremony</h2>
 
 <div >
-<p className="text-sm text-gray-400 w-200 mt-10 mx-auto ">Kwankgkai is a sacred death ritual performed by the Dayak Benuaq community. It is held to honor and guide the spirit of the deceased to the spiritual realm, known as Liau. This ritual is not performed immediately after death but often months or even years later, depending on the family's readiness.
+<p className="text-sm xl:text-m xl:w-7xl md:text-sm text-gray-200  w-auto mt-10 mx-auto ">Kwankgkai is a sacred death ritual performed by the Dayak Benuaq community. It is held to honor and guide the spirit of the deceased to the spiritual realm, known as Liau. This ritual is not performed immediately after death but often months or even years later, depending on the family's readiness.
 
 The ceremony involves various traditional rites such as bone purification, offerings, ritual songs, dances, and ancestral spirit communication. Kwankgkai serves as a final tribute to the deceased and strengthens social bonds within the community.</p>
 
 
-<div className="grid grid-cols-2">
-<iframe  className="rounded-2xl mt-10 transform hover:scale-105 transition duration-500"src="https://youtube.com/embed/YPZx7cpnkKc?si=Ji4MWHF3N_px0Y5k" frameborder="0"
+<div className="grid grid-cols-1 lg:grid-cols-2 ">
+<iframe  className="rounded-2xl xl:w-xl w-auto md:w-160  mt-10 transform hover:scale-105 transition lg:w-100 lg:h-100 duration-500"src="https://youtube.com/embed/YPZx7cpnkKc?si=Ji4MWHF3N_px0Y5k" frameborder="0"
 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
 width={600}
 height={400}
 
 ></iframe>
-<img className="rounded-2xl mx-auto mt-11 w-300 transform hover:scale-102 transition duration-500"src={kwangkai} alt="" />
-</div>
+<img className="rounded-2xl mx-auto mt-11 w-auto  xl:w-300 lg:w-200 transform hover:scale-102 transition duration-500"src={kwangkai} alt="" />
+</div> 
 </div>
 
 
 <h3 className="text-2xl flex justify-center font-sans font-bold mb-1 mt-10" >Berinukg Ritual</h3>
 
-<div className="grid grid-cols-2">
-  <div>
-    <p className="text-sm text-gray-400 mt-10 w-150">
+
+
+   <p className="text-sm xl:text-m md:text-sm text-gray-200 mt-10 xl:w-m mx-auto">
   Berinukg is a traditional spiritual ritual of the Dayak Benuaq people. The term refers to a practice of communicating with ancestral spirits or supernatural beings to seek healing, protection, or guidance.
 
 Led by a Beli’an (ritual leader or shaman), Berinukg includes chants, offerings, ritual dances, and sacred invocations. It reflects the Dayak people's deep connection with nature and the spiritual world.
 </p>
 
-<iframe className="rounded-2xl mt-10" src="https://youtube.com/embed/4kcyoSboryk?si=-YOg3v0Bb-q3Yyw-" 
+
+ <div className="grid lg:grid-cols-1  md:grid-cols-1  xl:grid-cols-2">
+  <div>
+ 
+
+<iframe className="      w-auto  rounded-2xl mt-10 lg:w-224 md:w-160 xl:w-2xl" src="https://youtube.com/embed/4kcyoSboryk?si=-YOg3v0Bb-q3Yyw-" 
 width={600}
 height={400}
 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -209,21 +214,24 @@ frameborder="0"></iframe>
 
 
 
-<img  className="rounded-2xl mt-10 "  src={belian} alt="" />
-</div>
+<img  className="  md:mx-auto  md:w-200 rounded-2xl mt-10 lg:w-180 xl:mt-10   xl:w-xl"  src={belian} alt="" />
+</div> 
 
 
-<h3 className="text-2xl flex justify-start font-sans font-bold mb-1 mt-10 " >Gantar Dance</h3>
+<h3 className="text-2xl flex justify-center font-sans font-bold mb-1 mt-10" >Gantar Dance</h3>
 
 
-<div className="grid grid-cols-2">
+<div className="grid grid-cols-1 md:grid-cols-1   xl:grid-cols-2 lg:gap-5">
 
 
-<img className="rounded-2xl mt-10 mx-auto" src={tariGantar} alt="" />
+
 <p 
-    className="text-sm text-gray-400 mt-10 w-150 mx-auto">The Gantar Dance is a traditional Dayak dance originating from East Kalimantan, particularly among the Dayak Benuaq and Tunjung tribes. It symbolizes farming activities, especially the act of planting rice.
+    className="text-sm xl:text-m md:text-m   text-gray-200 mt-10 mx-auto  w-auto lg:w-auto ">The Gantar Dance is a traditional Dayak dance originating from East Kalimantan, particularly among the Dayak Benuaq and Tunjung tribes. It symbolizes farming activities, especially the act of planting rice.
 
 Dancers use bamboo sticks (gantar) filled with seeds, shaking them rhythmically to traditional music. The dance features graceful yet purposeful movements, representing hard work, harmony, and cooperation. Gantar Dance is often performed to welcome guests, during ceremonies, and at cultural festivals.</p>
+
+ <img className="rounded-2xl mt-10 mx-auto transform hover:scale-105 transition duration-500 " src={tariGantar} alt="" /> 
+
 </div>
 
 </SpotlightCard>

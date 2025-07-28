@@ -48,7 +48,7 @@ initial={{ opacity: 0, y: 30 }}
           transition={{ duration: 1 }}
     
     
-    className="grid w-200 grid-cols-1 gap-x-4 gap-y-4 sm:grid-cols-2 md:grid-cols-3 m-auto mt-20">
+    className="grid w-auto xl:w-200 grid-cols-1 gap-x-4 gap-y-4 sm:grid-cols-2 md:grid-cols-3 m-auto mt-20">
       {data.map(({title, value,}, index) => (
         <Card
           key={index}
