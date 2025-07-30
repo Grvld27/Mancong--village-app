@@ -33,7 +33,7 @@ export default function InputForm() {
     e.preventDefault();
 
     try {
-      const response = await fetch("import.meta.env.VITE_API_URL", {
+      const response = await fetch("https://back-endmancong-village-app-production.up.railway.app/", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(formData)
