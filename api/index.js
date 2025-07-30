@@ -2,7 +2,6 @@ const express = require('express');
 const cors = require('cors');
 const mongoose = require('mongoose');
 const dotenv = require('dotenv');
-const serverless = require('serverless-http');
 
 dotenv.config();
 
@@ -41,7 +40,7 @@ app.post('/api', async (req, res) => {
 });
 
 // ✅ Mode serverless (untuk Vercel)
-module.exports = serverless(app);
+module.exports = app;
 
 // ✅ Mode normal (untuk lokal)
 if (require.main === module) {
