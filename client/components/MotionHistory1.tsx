@@ -33,18 +33,27 @@ export default function AnimatedText() {
     { label: "Heritage Status", value: "Declared cultural heritage in 2013" },
   ];
 
+
+
+
+
+
+
+
+
+  
   return (
-    <div className="mx-auto w-fit mb-10 ">
-    <SpotlightCard className=" mt-10 mb-10 px-6 py-10 overflow-x-hidden">
+    <div className=" mb-10  ">
+    <SpotlightCard className=" w-auto mx-auto mt-10  lg:w-auto md:w-auto xl:w-auto ">
       {/* Section 1: Intro */}
       <div className="grid md:grid-cols-2 gap-10 mb-16 items-center">
         <motion.div
           initial={{ opacity: 0, x: 30 }}
           whileInView={{ opacity: 1, x: 0 }}
 
-          className="text-gray-400"
+          className="text-white"
         >
-          <p ref={ref} className="text-justify">
+          <p ref={ref} className="text-start w-auto md:text-justify lg:text-justify xl:text-justify  ">
             Mancong Village is located in the Jempang District, West Kutai Regency, East Kalimantan, Indonesia. It serves as a cultural hub for the Dayak Benuaq indigenous people, particularly the Ohokng Sangokng subgroup. This community has a long history dating back to the pre-colonial period.
             <br /><br />
             In the 18th century, the Dayak Benuaq of the Ohokng River were forcibly displaced by the Kutai Sultanate due to their performance of a traditional ritual called Arakng Dodo, which was seen as conflicting with Islamic values. After nearly 40 years in exile, they returned to their ancestral lands around the Ohokng River and reestablished their community, giving rise to what is now Mancong Village.
@@ -55,13 +64,13 @@ export default function AnimatedText() {
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 1}}
         
-        src={Lamin} alt="Lamin Mancong" className="rounded-2xl w-full h-auto" />
+        src={Lamin} alt="Lamin Mancong" className="rounded-2xl w-auto h-auto" />
       </div>
 
       {/* Section 2: History */}
       <SpotlightCard className="mb-20">
         <motion.p
-          className="text-gray-400 text-justify"
+          className="text-white text-start md:text-justify lg:text-justify xl:text-justify"
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 1 }}
@@ -100,7 +109,7 @@ export default function AnimatedText() {
           
           src={LaminSeberang} alt="Lamin Seberang" className="rounded-2xl" />
           <motion.p
-            className="text-gray-400 text-justify"
+            className="text-white text-start md:text-justify lg:text-justify xl:text-justify"
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 1 }}
@@ -121,36 +130,16 @@ export default function AnimatedText() {
           transition={{ duration: 1 }}
           
           
-          className="text-gray-400 text-justify">
+          className="text-white text-start md:text-justify lg:text-justify xl:text-justify">
             Lamin Mancong, a traditional longhouse located in Kampung Mancong, stands as a cultural heritage site rich in Dayak Benuaq traditions. Measuring approximately 63 meters in length, 12 meters in width, and raised on stilts about 3 meters high, this two-story wooden structure is one of the largest of its kind. It consists of 24 rooms and can house up to 100 people.
         </motion.p>
         </div>
 
         {/* Table Section */}
-        <motion.div 
-           initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1 }}
-        
-        
-        className="max-w-3xl mx-auto mt-10 p-4 border rounded-xl shadow-lg bg-white">
-          <h2 className="text-2xl font-bold mb-4 text-center text-gray-700">
-            Structure Information
-          </h2>
-          <table className="table-auto w-full border-collapse">
-            <tbody>
-              {structureData.map((item, index) => (
-                <tr key={index} className="border-b border-gray-200">
-                  <td className="px-4 py-2 font-medium text-gray-700">{item.label}</td>
-                  <td className="px-4 py-2 text-gray-900">{item.value}</td>
-                </tr>
-              ))}
-            </tbody>
-          </table>
-        </motion.div>
+       
 
         {/* Images */}
-        <div className="grid grid-cols-2 md:grid-cols-2 gap-6 mt-10">
+        <div className=" grid grid-cols-1     lg:grid-cols-2 md:grid-cols-2 gap-6 mt-10">
           <motion.img 
              initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -165,6 +154,24 @@ export default function AnimatedText() {
           src={TerasDepan} alt="Teras Depan" className="rounded-2xl" />
         </div>
       </SpotlightCard>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
       {/* Section 4: Documentation */}
       <motion.h1
@@ -186,7 +193,28 @@ export default function AnimatedText() {
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
         allowFullScreen
       ></motion.iframe>
-    </SpotlightCard>
+    </SpotlightCard> 
+    <motion.div 
+           initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1 }}
+        
+        
+        className=" md:mx-auto xl:mx-auto mt-5 p-4 border rounded-xl shadow-lg bg-white xl:w-2xl xl:mt-20 ">
+          <h2 className="text-2xl font-bold mb-4 text-center text-gray-700">
+            Structure Information
+          </h2>
+          <table className="table-auto w-auto border-collapse  ">
+            <tbody>
+              {structureData.map((item, index) => (
+                <tr key={index} className="border-b border-gray-200">
+                  <td className="px-4 py-2 font-medium text-gray-700">{item.label}</td>
+                  <td className="px-4 py-2 text-gray-900">{item.value}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </motion.div>
     </div>
   );
 }

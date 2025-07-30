@@ -71,11 +71,11 @@ export default function MyMap() {
           transition={{ duration: 1 }}
         
         
-        className="w-fit md:mx-auto xl:mx-auto mt-5 p-4 border rounded-xl shadow-lg bg-white">
+        className="md:mx-auto xl:mx-auto mt-5 p-4 border rounded-xl shadow-lg bg-white">
           <h2 className="text-2xl font-bold mb-4 text-center text-gray-700">
             Geo Information
           </h2>
-          <table className="table-auto w-full border-collapse">
+          <table className="table-auto w-auto border-collapse">
             <tbody>
               {structureData.map((item, index) => (
                 <tr key={index} className="border-b border-gray-200">

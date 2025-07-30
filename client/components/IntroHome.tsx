@@ -7,6 +7,9 @@ import { useState, useRef, useEffect } from "react";
 import { motion, useInView } from "framer-motion";
 import SpotlightCard from "../hooks/SpotlightCard";
 
+import { Link } from "react-router-dom";
+
+
 import CountUp from "../components/CountUp";
 
 
@@ -45,7 +48,7 @@ export default function IntroHome({
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 1 }}
-          className=" mt-10 text-3xl lg:w-full lg:mx-auto sm:text-4xl lg:text-6xl  xl:mt-50   font-bold text-white font-sans"
+          className=" mt-10 text-3xl lg:w-full lg:mx-auto sm:text-4xl lg:text-6xl  xl:mt-50   font-bold text-white font-sans   "
           style={{ textShadow: "6px 10px 20px #999999" }}
         >
           Discover The Cultural Legacy of the Dayak Benuaq
@@ -146,10 +149,10 @@ className="xl:w-xl">Explore the vibrant traditions of the Dayak Benuaq—an indi
           transition={{ duration: 1}}
     
     
-    className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 p-6 mt-12 max-w-full mx-auto  ">
+    className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 p-6 mt-12 max-w-full mx-auto lg:mb-10 ">
       <a href="https://www.infokubar.id/lamin-mancong-rumah-panjang-legendaris-di-kutai-barat/">
 
-      <SpotlightCard className="h-120 lg:h-full xl:h-full">
+      <SpotlightCard className="h-120  md:h-161 lg:h-132 xl:h-full">
       
         {/* <img className="w-12 h-auto border-2 rounded-xl border-white"src='' alt=""  /> */}
 <p>M.Kadapi</p>
@@ -172,15 +175,15 @@ className="xl:w-xl">Explore the vibrant traditions of the Dayak Benuaq—an indi
 
 
 
-className="grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-1 gap-3 p-0 mt-0 h-104">
+className="grid grid-cols-1  md:grid sm:grid-cols-1 lg:grid-cols-1 gap-3 p-0 mt-0 h-104 lg:w-68">
       <SpotlightCard 
-      className="bg-gradient-to-r from-blue-800 to-purple-500 h-65 lg:h-59 xl:h-auto ">
+      className="bg-gradient-to-r from-blue-800 to-purple-500 h-65 lg:h-70 xl:h-50 xl:w-100 xl:mb-1">
 
 
 
 
         <h3 className="text-white font-extrabold text-2xl mb-2">Tourism At 2023 </h3>
-<div className="grid grid-cols-1 lg:grid-cols-1 sm:grid-cols-2 xl:grid-cols-2">
+<div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-1 sm:grid-cols-2 xl:grid-cols-2">
       <CountUp 
   from={0}
   to={331}
@@ -197,11 +200,11 @@ className="grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-1 gap-3 p-0 mt-0 h-104">
 
 
 
-      <SpotlightCard className="h-93 lg:h-60 xl:h-full">
-        <div className=" grid grid-cols-1  sm:grid-cols-1  lg:grid-cols-1   xl:grid-cols-2 gap-0 p-0 mt-0  h-auto w-100 lg:mt-[-10px] gap-x-6">
+      <SpotlightCard className="h-93 lg:h-58 lg:mt-1  xl:h-50 xl:w-100 xl:mt-3 lg:w-67">
+        <div className=" grid grid-cols-1  sm:grid-cols-1  lg:grid-cols-1   xl:grid-cols-2 xl:mt-2 gap-0 p-0 mt-0  h-auto w-100 lg:mt-[-20px] gap-x-6">
       <img className="h-auto  ml-5 rounded-2xl w-40 lg:w-40 lg:mb-5 " src="https://www.borneotourguide.com/wp-content/uploads/2020/04/mahakam-river-tour-www.borneotourguide-212.jpg" alt="" /> 
 
-      <p className=" w-50 mt-10   lg:w-50   xl:w-auto lg:mt-[-2px]    sm:text-sm sm:w-50 sm:mt-10  ">The Mancong dayak village has one attraction to welcome every visitors in front of the grand traditional longhouse.</p>
+      <p className=" w-50 mt-10   lg:w-50   xl:w-35 lg:mt-[-2px]    sm:text-sm sm:w-50 sm:mt-10  ">The Mancong dayak village has one attraction to welcome every visitors in front of the grand traditional longhouse.</p>
 
 
       
@@ -214,20 +217,25 @@ className="grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-1 gap-3 p-0 mt-0 h-104">
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 1}}
 
-className="grid grid-cols-1 lg:grid-cols-1 gap-4 p-0 mt-55 lg:mt-auto  h-auto w-full mx-auto  gap-x-6 ">
-            
-<SpotlightCard className="lg:h-56">
+className="grid grid-cols-1 md:grid-cols-2     lg:grid-cols-1 gap-4 p-0 mt-55 lg:mt-0  h-auto w-full mx-auto md:mt-0 gap-x-6 ">
+
+
+      <Link to ="/GalleryPage">
+<SpotlightCard className="lg:h-70 md:w-70 xl:h-auto lg:w-auto ">
   <h3 className="text-white font-bold text-xl mb-2">Sengkopeh</h3>
-        <p className="text-white">Ulap Doyo weaving has been famous since the time of the Kutai Kingdom, when social differentiation based on class and strata still applied.</p>
+        <p className="text-white">is a rattan fighting tradition originating from the Dayak Benuaq and Dayak Tunjung tribes of East Kalimantan.</p>
 
 
 </SpotlightCard>
-      
+  </Link>        
 
-      <SpotlightCard className=" lg:mt-0 sm:mt-5 bg-gradient-to-r from-blue-800 to-purple-500 h-full w-full lg:w-auto ">
+
+    <Link to ="/GalleryPage">
+      <SpotlightCard className="  sm:mt-5 bg-gradient-to-r from-blue-800 to-purple-500 h-full xl:h-auto w-full xl:mt-4 lg:w-auto md:ml-40 lg:h-59 md:mt-0 md:w-70 lg:mx-auto ">
         <h3 className="text-white font-bold text-xl mb-2">Ulap Doyo</h3>
         <p className="text-white">Ulap Doyo weaving has been famous since the time of the Kutai Kingdom, when social differentiation based on class and strata still applied.</p>
       </SpotlightCard>
+      </Link>
       </motion.div>
 
     </motion.div>

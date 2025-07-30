@@ -82,7 +82,7 @@ className="text-3xl flex justify-center font-sans font-bold mt-24">Population Co
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 1 }}
 
-className="mx-auto xl:text-3xl text-2xl flex justify-center font-sans font-bold mb-1 mt-20">livelihood of the population</motion.h4>
+className="mx-auto xl:text-3xl text-2xl flex justify-center font-sans font-bold mb-1 mt-[-200px] xl:mt-[-300px] md:mt-[-100px] ">livelihood of the population</motion.h4>
 <BarChart1/>
 
 <motion.h5 

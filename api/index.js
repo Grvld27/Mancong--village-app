@@ -10,7 +10,6 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-// Cegah koneksi ulang ke MongoDB
 let isConnected = false;
 const connectDB = async () => {
   if (isConnected) return;
@@ -27,10 +26,11 @@ const messageSchema = new mongoose.Schema({
 
 const Message = mongoose.models.Message || mongoose.model('Message', messageSchema);
 
-// Vercel sudah handle /api/messages, jadi pakai '/'
-app.post('/', async (req, res) => {
+// ✅ Endpoint diubah ke /api
+app.post('/api', async (req, res) => {
   try {
     await connectDB();
+    console.log("Received body:", req.body);
     const newMessage = new Message(req.body);
     await newMessage.save();
     res.status(201).json({ message: "Message saved!" });
@@ -40,4 +40,13 @@ app.post('/', async (req, res) => {
   }
 });
 
+// ✅ Mode serverless (untuk Vercel)
 module.exports = serverless(app);
+
+// ✅ Mode normal (untuk lokal)
+if (require.main === module) {
+  const PORT = process.env.PORT || 3000;
+  app.listen(PORT, () => {
+    console.log(`Server is running on http://localhost:${PORT}`);
+  });
+}

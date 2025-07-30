@@ -108,7 +108,7 @@ const CircleChartCard = React.forwardRef<
     <Card
       ref={ref}
       className={cn(
-        "h-[230px] border border-gray-700 dark:border-default-2 rounded-xl bg-gray-900",
+        "h-[230px] border xl:w-100 xl:mx-auto border-gray-700 dark:border-default-2 rounded-xl bg-gray-900",
         className
       )}
       {...props}
@@ -119,34 +119,13 @@ const CircleChartCard = React.forwardRef<
             <h3 className="text-small font-medium text-default-500">{title}</h3>
           </dt>
           <div className="flex items-center justify-end gap-x-2">
-            <Dropdown
-              classNames={{
-                content: "min-w-[120px]",
-              }}
-              placement="bottom-end"
-            >
-              <DropdownTrigger>
-                <Button isIconOnly radius="full" size="sm" variant="light">
-                  <Icon height={16} icon="solar:menu-dots-bold" width={16} />
-                </Button>
-              </DropdownTrigger>
-              <DropdownMenu
-                itemClasses={{
-                  title: "text-tiny",
-                }}
-                variant="flat"
-              >
-                <DropdownItem key="view-details">View Details</DropdownItem>
-                <DropdownItem key="export-data">Export Data</DropdownItem>
-                <DropdownItem key="set-alert">Set Alert</DropdownItem>
-              </DropdownMenu>
-            </Dropdown>
+           
           </div>
         </div>
       </div>
       <div className="flex h-full gap-x-3">
         <ResponsiveContainer
-          className="[&_.recharts-surface]:outline-none"
+          className="[&_.recharts-surface]:outline-none "
           height="100%"
           width="100%"
         >

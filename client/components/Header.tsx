@@ -54,9 +54,9 @@ function HeaderCustom() {
           initial={{ y: 0 }}
           animate={{ y: visible ? 0 : -10 }}
           transition={{ duration: 0.3 }}
-          className="fixed top-0 left-0 right-0 z-50  bg-black xl:py-5 py-5  w-auto sm:py-8 "
+          className="fixed top-0 left-0 right-0 z-50  bg-black xl:py-5 py-5   md:py-8  w-auto sm:py-8 "
         >
-          <ul className="flex flex-wrap justify-center items-center sm:gap-15  xl:gap-0 xl:w-fit xl:mx-auto gap-4 px-4">
+          <ul className="flex flex-wrap justify-center items-center sm:gap-15  xl:gap-0 xl:w-fit  xl:mx-auto gap-4 px-4">
             {navItems.map((item, idx) => (
               <li key={idx}>
                 <a

@@ -5,7 +5,7 @@
   "main": "index.js",
   "type": "commonjs",
   "scripts": {
-    "dev": "node messages/index.js"
+    "dev": "node index.js"
   },
   "keywords": [],
   "author": "",

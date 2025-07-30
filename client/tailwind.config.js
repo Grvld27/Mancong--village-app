@@ -12,6 +12,18 @@ const config = {
     "./node_modules/@heroui/react/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
+    // ⬇️ Tempatkan di sini!
+    screens: {
+      xss: '320px',
+      xs: '375px',
+      xm:'425px',
+      sm: '640px',
+      md: '768px',
+      lg: '1024px',
+      xl: '1280px',
+      '2xl': '1536px',
+    },
+
     extend: {
       keyframes: {
         shine: {
@@ -33,6 +45,5 @@ const config = {
   },
   plugins: [heroui()],
 };
-
 
 module.exports = config;
