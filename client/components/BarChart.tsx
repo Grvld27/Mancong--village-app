@@ -34,8 +34,8 @@ export default class BarChartAge extends PureComponent {
     return (
       <div 
      
-      className='mt-15 justify-items-center' style={{ width: '100%', height: '100%' }}>
-        <ResponsiveContainer width="90%" height="50%">
+      className='mt-15 justify-items-center ' style={{ width: '100%', height: '100%' }}>
+        <ResponsiveContainer width="100%" height="50%">
           <BarChart
             data={data}
             margin={{

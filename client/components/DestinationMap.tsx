@@ -57,17 +57,17 @@ export default function DestinationMap() {
           transition={{ duration: 1}}
     >
       <h1
-        className="flex justify-center mt-20 mb-10 font-bold text-2xl font-sans"
+        className=" xl:text-4xl  flex justify-center mt-20 mb-10 font-bold text-2xl font-sans"
         style={{ textShadow: '6px 10px 20px #999999' }}
       >
-        Route to Kampung Wisata Mancong
+        Route to Kampung  Mancong
       </h1>
-
+<div className='mx-auto'>
       <MapContainer
         center={[-0.8, 116.8]}
         zoom={9}
         scrollWheelZoom={true}
-        style={{ height: '400px', width: '100%' }}
+        style={{ height: '400px', width: '80%' }}
         className="rounded-3xl mx-auto z-2"
       >
         <TileLayer
@@ -93,15 +93,17 @@ export default function DestinationMap() {
         {/* Routing */}
         <RoutingControl />
       </MapContainer>
+</div>
+
 
 <SpotlightCard className="mt-10 mx-auto w-fit h-auto">
 
-<div className='grid grid-cols-1   lg:grid-cols-2 gap-0 p-0 mt-0 h-auto gap-x-0'>
+<div className='grid grid-cols-1 xl:grid-cols-2  lg:grid-cols-2 gap-0 p-0 mt-0 h-auto gap-x-0'>
   
-<img className=" w-100  rounded-2xl mx-auto  "src={Sepinggan} alt="" />
+<img className=" w-100 mt-5  rounded-2xl mx-auto  "src={Sepinggan} alt="" />
 <SpotlightCard className='h-auto w-auto mx-auto  mt-5'>
 <h1 className='font-sans text-2xl font-bold' >Balikpapan, East Kalimantan</h1>
-<p className='text-sm mt-16 mx-auto w-fit justify-items-center mb-10 text-white '>The journey to Kampung Wisata Mancong begins in Balikpapan, a major port city in East Kalimantan. From Balikpapan, you’ll travel approximately 115 km by land to Samarinda, the capital of East Kalimantan Province. This leg of the journey usually takes around 3 to 4 hours by car or bus.
+<p className='text-sm xl:text-xl mt-16 mx-auto w-fit justify-items-center mb-10 text-white '>The journey to Kampung Wisata Mancong begins in Balikpapan, a major port city in East Kalimantan. From Balikpapan, you’ll travel approximately 115 km by land to Samarinda, the capital of East Kalimantan Province. This leg of the journey usually takes around 3 to 4 hours by car or bus.
 
 From Samarinda, continue your journey westward to Kampung Mancong, located in Jempang District, West Kutai Regency. This overland trip covers approximately 270 km, passing through towns like Tenggarong, Kota Bangun, and Muara Pahu.
 
@@ -126,13 +128,13 @@ From Samarinda, continue your journey westward to Kampung Mancong, located in Je
 <SpotlightCard className=" mx-auto w-fit h-auto mt-20 mb-0 ">
 <div className="grid grid-cols-2 gap-0 p-0 mt-0 h-auto  gap-x-0">  
 
-        <h1 className="font-sans text-2xl font-bold w-50 mb-10">There are water and land routes</h1>
+        <h1 className="font-sans text-2xl xl:text-4xl font-bold w-50 mb-10">There are water and land routes</h1>
 </div>
 
-<p className='text-sm  mx-auto w-fit text-white' > The travel time from Samarinda to Mancong is about 8 to 10 hours, depending on road and weather conditions.
+<p className='text-sm xl:text-xl mx-auto w-fit text-white' > The travel time from Samarinda to Mancong is about 8 to 10 hours, depending on road and weather conditions.
 Alternatively, you can take a combination of land and river routes, especially from Kota Bangun to Kampung Mancong, using river transport along the Mahakam River and through Lake Jempang — offering a scenic and culturally rich travel experience.</p>
 
-<div className="grid grid-cols-1 md:grid-cols-2 sm:grid-cols-3 lg:grid-cols-2 gap-8 p-0 mt-0 h-104 ">
+<div className="grid grid-cols-1 md:grid-cols-2 sm:grid-cols-3 lg:grid-cols-2 gap-8 p-0 mt-5 h-104 ">
  
 <iframe className=" w-full  max-w-full rounded-xl"
   width="100%"

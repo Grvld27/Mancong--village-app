@@ -1,4 +1,4 @@
-import sungaiImg from "../assets/sungai-DupnVGYu.jpg";
+import lamin from "../assets/Lamin-Mancong-seberang-1024x683-dk9BCdn5.jpg"
 import monkeyImg from "../assets/monkey-C0jNnkSP.jpeg";
 import humanImg from "../assets/human1-cbKT14Ki.jpeg";
 import { ArrowRight } from "lucide-react";
@@ -112,7 +112,7 @@ className="xl:w-xl">Explore the vibrant traditions of the Dayak Benuaq—an indi
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 1 }}
-            src={sungaiImg}
+            src={lamin}
             alt="Main"
             className="w-full  lg:w-60 xl:w-90 xl:mb-7 max-w-xs rounded-xl shadow-lg 
           
@@ -175,7 +175,7 @@ className="xl:w-xl">Explore the vibrant traditions of the Dayak Benuaq—an indi
 
 
 
-className="grid grid-cols-1  md:grid sm:grid-cols-1 lg:grid-cols-1 gap-3 p-0 mt-0 h-104 lg:w-68">
+className="grid grid-cols-1  md:grid sm:grid-cols-1 lg:grid-cols-  xl:grid-cols-1 xl:gap-x-104  gap-3 p-0 mt-0 h-104 lg:w-68">
       <SpotlightCard 
       className="bg-gradient-to-r from-blue-800 to-purple-500 h-65 lg:h-70 xl:h-50 xl:w-100 xl:mb-1">
 
@@ -200,7 +200,7 @@ className="grid grid-cols-1  md:grid sm:grid-cols-1 lg:grid-cols-1 gap-3 p-0 mt-
 
 
 
-      <SpotlightCard className="h-93 lg:h-58 lg:mt-1  xl:h-50 xl:w-100 xl:mt-3 lg:w-67">
+      <SpotlightCard className="h-93 lg:h-58 lg:mt-1  xl:h-50 xl:w-100 xl:mt-0 lg:w-67">
         <div className=" grid grid-cols-1  sm:grid-cols-1  lg:grid-cols-1   xl:grid-cols-2 xl:mt-2 gap-0 p-0 mt-0  h-auto w-100 lg:mt-[-20px] gap-x-6">
       <img className="h-auto  ml-5 rounded-2xl w-40 lg:w-40 lg:mb-5 " src="https://www.borneotourguide.com/wp-content/uploads/2020/04/mahakam-river-tour-www.borneotourguide-212.jpg" alt="" /> 
 
@@ -210,18 +210,37 @@ className="grid grid-cols-1  md:grid sm:grid-cols-1 lg:grid-cols-1 gap-3 p-0 mt-
       
 </div>
       </SpotlightCard>
+
+
+
+
+
+
+      
 </motion.div>
+
+
+
+
+
+
+
+
+
+
+
+
 
 <motion.div
    initial={{ opacity: 0, x: 30 }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 1}}
 
-className="grid grid-cols-1 md:grid-cols-2     lg:grid-cols-1 gap-4 p-0 mt-55 lg:mt-0  h-auto w-full mx-auto md:mt-0 gap-x-6 ">
+className="grid grid-cols-1 md:grid-cols-2 xl:ml-[-40px]     lg:grid-cols-1 gap-4 p-0 mt-55 lg:mt-0  h-auto w-full mx-auto md:mt-0 gap-x-6 ">
 
 
       <Link to ="/GalleryPage">
-<SpotlightCard className="lg:h-70 md:w-70 xl:h-auto lg:w-auto ">
+<SpotlightCard className="lg:h-70 md:w-70 xl:h-50  lg:w-auto ">
   <h3 className="text-white font-bold text-xl mb-2">Sengkopeh</h3>
         <p className="text-white">is a rattan fighting tradition originating from the Dayak Benuaq and Dayak Tunjung tribes of East Kalimantan.</p>
 
@@ -231,7 +250,7 @@ className="grid grid-cols-1 md:grid-cols-2     lg:grid-cols-1 gap-4 p-0 mt-55 lg
 
 
     <Link to ="/GalleryPage">
-      <SpotlightCard className="  sm:mt-5 bg-gradient-to-r from-blue-800 to-purple-500 h-full xl:h-auto w-full xl:mt-4 lg:w-auto md:ml-40 lg:h-59 md:mt-0 md:w-70 lg:mx-auto ">
+      <SpotlightCard className="  sm:mt-5 bg-gradient-to-r from-blue-800 to-purple-500 h-full xl:h-50  w-full  lg:w-auto md:ml-40 lg:h-59 md:mt-0 md:w-70 lg:mx-auto ">
         <h3 className="text-white font-bold text-xl mb-2">Ulap Doyo</h3>
         <p className="text-white">Ulap Doyo weaving has been famous since the time of the Kutai Kingdom, when social differentiation based on class and strata still applied.</p>
       </SpotlightCard>

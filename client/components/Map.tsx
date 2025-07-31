@@ -37,7 +37,7 @@ export default function MyMap() {
 
     
       <h1
-        className='     mx-auto xl:text-3xl text-2xl flex justify-center font-sans font-bold mb-20 mt-20'
+        className='     mx-auto xl:text-4xl text-2xl flex justify-center font-sans font-bold mb-20 mt-20'
         style={{ textShadow: '6px 10px 20px #999999' }}
         initial={{ opacity: 0, x: 30 }}
         whileInView={{ opacity: 1, x: 0 }}

@@ -179,14 +179,14 @@ export default function AnimatedText() {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 1 }}
       
-      className="text-2xl font-bold text-center mb-6">Docs</motion.h1>
+      className="text-4xl font-bold text-center mb-6">Lamin</motion.h1>
       <motion.iframe
 
 
    initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 1 }}
-        className="rounded-2xl w-full h-[550px]"
+        className="rounded-2xl xl:w-4xl xl:mx-auto   w-full h-[550px]"
         src="https://youtube.com/embed/hnIYv-uIF6M?si=BkmoVjLqDuKTj0_t"
         title="YouTube video player"
         frameBorder="0"
@@ -200,7 +200,7 @@ export default function AnimatedText() {
           transition={{ duration: 1 }}
         
         
-        className=" md:mx-auto xl:mx-auto mt-5 p-4 border rounded-xl shadow-lg bg-white xl:w-2xl xl:mt-20 ">
+        className=" md:mx-auto xl:mx-auto mt-5 p-4 border rounded-xl shadow-lg bg-white xl:w-2xl xl:mt-20  ">
           <h2 className="text-2xl font-bold mb-4 text-center text-gray-700">
             Structure Information
           </h2>

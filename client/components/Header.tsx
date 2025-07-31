@@ -61,10 +61,10 @@ function HeaderCustom() {
               <li key={idx}>
                 <a
                   href={item.href}
-                  className="text-white xl:text-m sm:text-xl text-1xl hover:-translate-y-1 transition-all duration-300"
+                  className="text-white xl:text-m sm:text-xl text-1xl hover: transform transition-all duration-700"
                 >
                   {typeof item.label === "string" ? (
-                    <button className="   xl:w-39 xl:h-15 sm:hover:bg-none  sm:rounded-2xl  xl:rounded-xl  xl:hover:bg-gradient-to-r from-cyan-400 to-blue-500  transition duration-500  ">{item.label}</button>
+                    <button className="   xl:w-39 xl:h-15 sm:hover:bg-none  sm:rounded-2xl  xl:rounded-xl  xl:hover:bg-gradient-to-r from-blue-800 to-purple-200  transform  hover:scale-106 transition-transform duration-900    ">{item.label}</button>
                   ) : (
                     item.label
                   )}

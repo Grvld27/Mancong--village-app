@@ -42,7 +42,7 @@ const ProfilePage = () => {
  
 
 
-<h1 className=" mx-auto xl:text-3xl text-2xl flex justify-center font-sans font-bold mb-1 mt-40">Village Government</h1>
+<h1 className=" mx-auto xl:text-4xl text-2xl flex justify-center font-sans font-bold mb-1 mt-40">Village Government</h1>
  
 
 
@@ -61,28 +61,28 @@ const ProfilePage = () => {
    initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 1 }}
-className="mx-auto xl:text-3xl text-2xl flex justify-center font-sans font-bold mb-1 mt-40">Population Composition by Gender</motion.h1>
+className="mx-auto xl:text-4xl text-2xl flex justify-center font-sans font-bold mb-1 mt-40">Population Composition by Gender</motion.h1>
 <PieChart/>
 <motion.h2 
  initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 1 }}
 
-className="mx-auto xl:text-3xl text-2xl flex justify-center font-sans font-bold mb-1 mt-40">Population Composition by Religion</motion.h2>
+className="mx-auto xl:text-4xl text-2xl flex justify-center font-sans font-bold mb-1 mt-40">Population Composition by Religion</motion.h2>
 <KpiStat4/>
 <motion.h3
  initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 1 }}
 
-className="text-3xl flex justify-center font-sans font-bold mt-24">Population Composition by Age</motion.h3>
+className="text-3xl xl:text-4xl flex justify-center font-sans font-bold mt-24">Population Composition by Age</motion.h3>
 <BarChartAge/>
 <motion.h4 
  initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 1 }}
 
-className="mx-auto xl:text-3xl text-2xl flex justify-center font-sans font-bold mb-1 mt-[-200px] xl:mt-[-300px] md:mt-[-100px] ">livelihood of the population</motion.h4>
+className="mx-auto xl:text-4xl text-2xl flex justify-center font-sans font-bold mb-1 mt-[-200px] xl:mt-[-300px] md:mt-[-100px] ">livelihood of the population</motion.h4>
 <BarChart1/>
 
 <motion.h5 
@@ -91,7 +91,7 @@ className="mx-auto xl:text-3xl text-2xl flex justify-center font-sans font-bold 
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 1 }}
 
-className="text-3xl flex justify-center font-sans font-bold mt-24">last education</motion.h5>
+className="text-4xl flex justify-center font-sans font-bold mt-24">last education</motion.h5>
 <CustomizedDotChart/> 
 
 

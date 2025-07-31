@@ -121,10 +121,10 @@ const items = [
 
 <HeaderCustom/>
 
-<h1 className="text-2xl flex justify-center font-sans font-bold mb-1 mt-40 md:mt-0">Gallery</h1>
+<h1 className="text-2xl flex justify-center font-sans font-bold mb-1 mt-40 md:mt-0  xl:text-4xl ">Gallery</h1>
 
 
-   <p  className= "mt-20 ml-5 font-medium text-m md:text-justify text-justify  text-gray-300 font-sans w-m"
+   <p  className= "mt-20 ml-5 font-medium xl:text-xl text-m md:text-justify text-justify  text-gray-300 font-sans w-m"
    
 
 
@@ -149,13 +149,13 @@ These photographs are more than just visuals; they represent living heritage, st
 
 
 
-<div className=" mt-600 md:mt-340  xl:mt-120 h-100 lg:mt-170">
+<div className=" mt-1180 md:mt-340  xl:mt-120 h-100 lg:mt-170">
 <SpotlightCard className="h-auto md:h-auto ">
-<h1  className="text-2xl flex justify-center font-sans font-bold mb-1 mt-0" > Ulap Doyo</h1>
+<h1  className="text-2xl xl:text-4xl flex justify-center font-sans font-bold mb-1 mt-0" > Ulap Doyo</h1>
 <div className="grid grid-cols-1 md:grid-cols-2 mt-10">
 <img  className="w-auto md:w-50 x: lg:w-80 mx-auto h-auto rounded-2xl transform hover:scale-110 transition duration-500" src={ulapDoyo} alt="" />
 <div className="grid grid-cols-1">
-<p className="text-sm xl:text-m md:text-sm md:text-justify lg:text-justify xl:text-justify           xl:w-2xl md:w-80 text-gray-300  w-full mt-10 mb-10  "> Ulap Doyo is a traditional woven fabric made by the Dayak Benuaq people, particularly in West Kutai Regency, East Kalimantan, Indonesia. The name "Ulap Doyo" comes from the doyo plant (Curculigo latifolia), a wild plant whose fibers are spun into thread and woven manually using traditional looms. 
+<p className="text-sm xl:text-xl md:text-sm md:text-justify lg:text-justify xl:text-justify           xl:w-2xl md:w-80 text-gray-300  w-full mt-10 mb-10  "> Ulap Doyo is a traditional woven fabric made by the Dayak Benuaq people, particularly in West Kutai Regency, East Kalimantan, Indonesia. The name "Ulap Doyo" comes from the doyo plant (Curculigo latifolia), a wild plant whose fibers are spun into thread and woven manually using traditional looms. 
 
 The motifs of Ulap Doyo are deeply symbolic and inspired by nature, such as hornbills, dragons, plants, and other sacred patterns passed down through generations. The cloth is used in traditional ceremonies and is an essential part of Dayak cultural attire.</p>
 
@@ -171,16 +171,16 @@ The motifs of Ulap Doyo are deeply symbolic and inspired by nature, such as horn
 </div>
 
 
-<h2  className="text-2xl flex justify-center font-sans font-bold mb-1 mt-10 ">Kwangkai Ceremony</h2>
+<h2  className="text-2xl xl:text-4xl flex justify-center font-sans font-bold mb-1 mt-10 ">Kwangkai Ceremony</h2>
 
 <div >
-<p className="text-sm xl:text-m xl:w-7xl md:text-sm md:text-justify text-gray-200  w-auto mt-10 mx-auto ">Kwankgkai is a sacred death ritual performed by the Dayak Benuaq community. It is held to honor and guide the spirit of the deceased to the spiritual realm, known as Liau. This ritual is not performed immediately after death but often months or even years later, depending on the family's readiness.
+<p className="text-sm xl:text-xl xl:w-7xl md:text-sm md:text-justify text-gray-200  w-auto mt-10 mx-auto ">Kwankgkai is a sacred death ritual performed by the Dayak Benuaq community. It is held to honor and guide the spirit of the deceased to the spiritual realm, known as Liau. This ritual is not performed immediately after death but often months or even years later, depending on the family's readiness.
 
 The ceremony involves various traditional rites such as bone purification, offerings, ritual songs, dances, and ancestral spirit communication. Kwankgkai serves as a final tribute to the deceased and strengthens social bonds within the community.</p>
 
 
 <div className="grid grid-cols-1 lg:grid-cols-2 ">
-<iframe  className="rounded-2xl xl:w-xl w-auto md:w-160  mt-10 transform hover:scale-105 transition lg:w-100 lg:h-100 duration-500"src="https://youtube.com/embed/YPZx7cpnkKc?si=Ji4MWHF3N_px0Y5k" frameborder="0"
+<iframe  className="rounded-2xl xl:w-xl w-50 mx-auto h-auto md:w-160 md:h-100  mt-10 transform hover:scale-105 transition lg:w-100 lg:h-100 duration-500"src="https://youtube.com/embed/YPZx7cpnkKc?si=Ji4MWHF3N_px0Y5k" frameborder="0"
 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
 width={600}
 height={400}
@@ -191,22 +191,22 @@ height={400}
 </div>
 
 
-<h3 className="text-2xl flex justify-center font-sans font-bold mb-1 mt-10" >Beliant Ritual</h3>
+<h3 className="text-2xl xl:text-4xl flex justify-center font-sans font-bold mb-1 mt-10" >Beliant Ritual</h3>
 
 
 
-   <p className="text-sm xl:text-m md:text-sm md:text-justify lg:text-justify xl:text-justify  text-gray-200 mt-10 xl:w-m mx-auto">
+   <p className="text-sm xl:text-m md:text-sm md:text-justify lg:text-justify xl:text-justify xl:text-xl  text-gray-200 mt-10 xl:w-m mx-auto">
   Beliant is a traditional spiritual ritual of the Dayak Benuaq people. The term refers to a practice of communicating with ancestral spirits or supernatural beings to seek healing, protection, or guidance.
 
 Led by a Beli’an (ritual leader or shaman), Berinukg includes chants, offerings, ritual dances, and sacred invocations. It reflects the Dayak people's deep connection with nature and the spiritual world.
 </p>
 
 
- <div className="grid lg:grid-cols-1  md:grid-cols-1  xl:grid-cols-2">
+ <div className="grid grid-cols-1    lg:grid-cols-1  md:grid-cols-1  xl:grid-cols-2">
   <div>
  
 
-<iframe className="w-auto  rounded-2xl mt-10 lg:w-auto md:w-full   xl:w-2xl" src="https://youtube.com/embed/4kcyoSboryk?si=-YOg3v0Bb-q3Yyw-" 
+<iframe className="w-50 md:h-100  h-auto mx-auto  rounded-2xl mt-10 lg:w-full md:w-full   xl:w-2xl" src="https://youtube.com/embed/4kcyoSboryk?si=-YOg3v0Bb-q3Yyw-" 
 width={600}
 height={400}
 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -219,7 +219,7 @@ frameborder="0"></iframe>
 </div> 
 
 
-<h3 className="text-2xl flex justify-center font-sans font-bold mb-1 mt-10" >Gantar Dance</h3>
+<h3 className="text-2xl xl:text-4xl flex justify-center font-sans font-bold mb-1 mt-10" >Gantar Dance</h3>
 
 
 <div className="grid grid-cols-1 md:grid-cols-1   xl:grid-cols-2 lg:gap-5">
@@ -227,17 +227,17 @@ frameborder="0"></iframe>
 
 
 <p 
-    className="text-sm xl:text-m md:text-m   text-gray-200 mt-10 mx-auto  w-auto lg:w-auto md:text-justify ">The Gantar Dance is a traditional Dayak dance originating from East Kalimantan, particularly among the Dayak Benuaq and Tunjung tribes. It symbolizes farming activities, especially the act of planting rice.
+    className="text-sm xl:text-xl md:text-m   text-gray-200 mt-10 mx-auto  w-auto lg:w-auto md:text-justify ">The Gantar Dance is a traditional Dayak dance originating from East Kalimantan, particularly among the Dayak Benuaq and Tunjung tribes. It symbolizes farming activities, especially the act of planting rice.
 
 Dancers use bamboo sticks (gantar) filled with seeds, shaking them rhythmically to traditional music. The dance features graceful yet purposeful movements, representing hard work, harmony, and cooperation. Gantar Dance is often performed to welcome guests, during ceremonies, and at cultural festivals.</p>
 
- <img className="rounded-2xl mt-10 mx-auto  transform hover:scale-102 transition duration-500 " src={tariGantar} alt="" /> 
+ <img className="rounded-2xl mt-10 mx-auto xl:w-120  transform hover:scale-102 transition duration-500 " src={tariGantar} alt="" /> 
 
 </div>
 
 
 
-<h3 className="text-2xl flex justify-center font-sans font-bold mb-1 mt-10" >Sengkopeh</h3>
+<h3 className="text-2xl  xl:text-4xl flex justify-center font-sans font-bold mb-1 mt-10" >Sengkopeh</h3>
 
 
 <div className="grid grid-cols-1 md:grid-cols-1   xl:grid-cols-1 lg:gap-5">
@@ -245,23 +245,23 @@ Dancers use bamboo sticks (gantar) filled with seeds, shaking them rhythmically 
 
 
 <p 
-    className="text-sm xl:text-m md:text-m   text-gray-200 mt-10 mx-auto  w-auto lg:w-auto md:text-justify ">Behempas or sengkopeh is a rattan fighting tradition originating from the Dayak Benuaq and Dayak Tunjung tribes of East Kalimantan. In this ritual, two adult men strike each other's backs with rattan (called gai) while parrying with rattan shields (saloko). Behempas was originally part of large traditional funeral ceremonies (Kwangkey), but is now more often performed at cultural festivals.
+    className="text-sm xl:text-xl md:text-m   text-gray-200 mt-10 mx-auto  w-auto lg:w-auto md:text-justify ">Behempas or sengkopeh is a rattan fighting tradition originating from the Dayak Benuaq and Dayak Tunjung tribes of East Kalimantan. In this ritual, two adult men strike each other's backs with rattan (called gai) while parrying with rattan shields (saloko). Behempas was originally part of large traditional funeral ceremonies (Kwangkey), but is now more often performed at cultural festivals.
 
 This tradition not only tests strength and dexterity but also instills the values of sportsmanship, courage, and self-control. Behempas is an important symbol in preserving the cultural identity and ancestral heritage of the Dayak Benuaq people.</p>
 
- <img className="rounded-2xl mt-10 mx-auto xl:w-autotransform hover:scale-105 transition duration-500 " src={rotan} alt="" /> 
+ <img className="rounded-2xl mt-10 mx-auto  xl:w-200 transform hover:scale-105 transition duration-500 " src={rotan} alt="" /> 
 
 
 
-<div className="grid grid-cols-1 xl:grid-cols-1 lg:grid-cols-2 md:grid-cols-2 xl:mx-auto">
- <iframe className="w-auto  rounded-2xl mt-10 lg:w-auto md:w-full   xl:w-3xl " src="https://youtube.com/embed/e2-LSoI9Cbc?si=rnGMtp-721mW1H2S" 
+<div className="grid grid-cols-1 xl:grid-cols-1 lg:grid-cols-1 md:grid-cols-1 xl:mx-auto">
+ <iframe className="w-50 h-40 rounded-2xl mt-10  md:w-full  lg:w-full md:h-100    " src="https://youtube.com/embed/e2-LSoI9Cbc?si=rnGMtp-721mW1H2S" 
 width={600}
 height={400}
 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
 frameborder="0"></iframe>
 
 
-<iframe className="w-auto  rounded-2xl mt-10 lg:w-auto md:w-full  xl:w-3xl " src="https://youtube.com/embed/A4jEvUV05gA?si=AnzCo9r_7lMl3cZ-" 
+<iframe className="w-50  h-40 mx-auto  lg:rounded-2xl mt-10 lg:w-full md:w-full md:h-100 xl:w-3xl " src="https://youtube.com/embed/A4jEvUV05gA?si=AnzCo9r_7lMl3cZ-" 
 width={600}
 height={400}
 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
