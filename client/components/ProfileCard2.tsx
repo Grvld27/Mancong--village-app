@@ -1,6 +1,6 @@
 import Fotopetinggi from '../assets/Foto_Petinggi-removebg-preview-dHaV_VfB.png';
 import sekdes from '../assets/foto_sekdes-removebg-preview-Bmn2FfQJ.png';
-import kaurumum from '../assets/foto_kaur_keuangan_-removebg-preview -D1WU4lzD.png';
+import kaurumum from '../assets/foto_kaur_umum-removebg-preview-BUW0Od0H.png';
 import kaurUang from '../assets/foto_kaur_keuangan_-removebg-preview -D1WU4lzD.png';
 import kasiPelayanan from '../assets/foto_kasi_kesejahteraan-removebg-preview-B5AZD2sG.png';
 import kasiPemerintahan from '../assets/foto_kasi_pemerintahan-removebg-preview-BYz9udlT.png';
