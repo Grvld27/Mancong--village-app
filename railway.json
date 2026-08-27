@@ -1,0 +1,24 @@
+{
+  "services": [
+    {
+      "name": "backend",
+      "sourceDir": "api",
+      "startCommand": "node index.js",
+      "buildCommand": "npm install",
+      "envs": {
+        "PORT": "3000",
+        "MONGO_URI": "MONGO_URI=mongodb://localhost:27017/MancongVillage "
+      }
+    },
+    {
+      "name": "frontend",
+      "sourceDir": "client",
+      "buildCommand": "npm install && npm run build",
+      "startCommand": "npx serve -s dist",
+      "static": true,
+      "envs": {
+        "VITE_API_URL": "https://your-backend.up.railway.app"
+      }
+    }
+  ]
+}
